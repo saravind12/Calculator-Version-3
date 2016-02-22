@@ -1,5 +1,5 @@
 /** Calculator JUnit Testing * 
- * @author Sudeep Aravind * 
+ * @author Sudeep Aravind (PIN 111)* 
  * @version 2/22/16 *  */ 
 
 package cse360assign3;
@@ -74,6 +74,7 @@ public class CalculatorTest1
 	public void testGetHistory() 
 	{
 		Calculator calctest = new Calculator();
+		assertEquals("0", calctest.getHistory());
 		calctest.add(60);
 		calctest.add(5);
 		calctest.subtract(5);
