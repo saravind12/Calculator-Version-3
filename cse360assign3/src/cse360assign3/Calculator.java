@@ -1,16 +1,19 @@
-package cse360assign3; 
 /** Calculator * 
- * @author Sudeep Aravind * 
+ * @author Sudeep Aravind (PIN 111)* 
  * @version 2/22/16 *  */ 
+
+package cse360assign3; 
 public class Calculator 
 { 
 	private int total;
 	private String hist; //to hold the history of calculations
 	
+	
 	/** Calculator object */
 	public Calculator () 
 	{	
 		total = 0; // not needed - included for clarity 
+		hist = "0"; //setting history to the initial 0 value in a string
 	}	
 	
 	/** this returns the total	* * @return total	*/	
@@ -44,10 +47,14 @@ public class Calculator
 	public void divide (int value) 
 	{	
 		if (value == 0)
+		{
 			total = 0;
+		}
 		else
-		total = total / value;
-		hist = hist + " / " + value;
+		{
+			total = total / value;
+			hist = hist + " / " + value;
+		}
 	}	
 	
 	/** A string containing the history of the calculations performed is returned	* * @return hist	*/	
