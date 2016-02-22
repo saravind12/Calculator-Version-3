@@ -10,7 +10,8 @@ public class Calculator1Test
 	@Test
 	public void testCalculator() 
 	{
-		fail("Not yet implemented");
+		Calculator calctest = new Calculator();
+		assertNotNull(calctest);
 	}
 	
 	@Test
